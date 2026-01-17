@@ -24,24 +24,51 @@ export const Navigation = () => {
           <Link to="/" className="group flex items-center gap-3">
             <div className="relative w-8 h-8">
               <svg viewBox="0 0 32 32" className="w-full h-full">
-                <polygon
-                  points="16,2 30,24 2,24"
+                {/* Academic portfolio icon: stacked documents/portfolio */}
+                <rect
+                  x="6"
+                  y="8"
+                  width="20"
+                  height="16"
                   fill="none"
                   stroke="hsl(38, 80%, 55%)"
                   strokeWidth="1.5"
                   className="transition-all duration-500 group-hover:stroke-[2]"
+                  rx="1"
                 />
-                <circle
-                  cx="16"
-                  cy="16"
-                  r="4"
-                  fill="hsl(38, 80%, 55%)"
-                  className="transition-all duration-500 group-hover:r-5"
+                <rect
+                  x="8"
+                  y="6"
+                  width="20"
+                  height="16"
+                  fill="none"
+                  stroke="hsl(38, 80%, 55%)"
+                  strokeWidth="1.5"
+                  className="transition-all duration-500 group-hover:stroke-[2]"
+                  rx="1"
+                />
+                <line
+                  x1="10"
+                  y1="12"
+                  x2="22"
+                  y2="12"
+                  stroke="hsl(38, 80%, 55%)"
+                  strokeWidth="1"
+                  className="transition-all duration-500"
+                />
+                <line
+                  x1="10"
+                  y1="16"
+                  x2="18"
+                  y2="16"
+                  stroke="hsl(38, 80%, 55%)"
+                  strokeWidth="1"
+                  className="transition-all duration-500"
                 />
               </svg>
             </div>
             <span className="font-display text-lg font-medium tracking-tight text-foreground">
-              Studio
+              Portfolio
             </span>
           </Link>
 

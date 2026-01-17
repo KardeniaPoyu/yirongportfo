@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import AcademicVisual from '@/components/AcademicVisual';
 
 const skills = [
   { category: 'Design', items: ['UI/UX Design', 'Visual Design', 'Motion Design', 'Prototyping'] },
@@ -47,58 +48,7 @@ const About = () => {
               </motion.div>
 
               {/* Visual element */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                className="relative aspect-square"
-              >
-                <div className="absolute inset-0 bg-card border border-border rounded-lg overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <svg viewBox="0 0 300 300" className="w-full h-full p-12">
-                      {/* Concentric circles */}
-                      {[1, 2, 3, 4, 5].map((i) => (
-                        <circle
-                          key={i}
-                          cx="150"
-                          cy="150"
-                          r={30 + i * 25}
-                          fill="none"
-                          stroke="hsl(var(--border))"
-                          strokeWidth="0.5"
-                        />
-                      ))}
-                      
-                      {/* Radial lines */}
-                      {Array.from({ length: 12 }).map((_, i) => {
-                        const angle = (i / 12) * Math.PI * 2;
-                        const x2 = 150 + Math.cos(angle) * 140;
-                        const y2 = 150 + Math.sin(angle) * 140;
-                        return (
-                          <line
-                            key={i}
-                            x1="150"
-                            y1="150"
-                            x2={x2}
-                            y2={y2}
-                            stroke="hsl(var(--border))"
-                            strokeWidth="0.5"
-                          />
-                        );
-                      })}
-                      
-                      {/* Center */}
-                      <circle
-                        cx="150"
-                        cy="150"
-                        r="20"
-                        fill="hsl(var(--primary))"
-                        className="animate-pulse-subtle"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </motion.div>
+              <AcademicVisual />
             </div>
           </div>
         </section>

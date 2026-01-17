@@ -28,21 +28,51 @@ export const Footer = () => {
             <Link to="/" className="inline-flex items-center gap-3 mb-4">
               <div className="w-8 h-8">
                 <svg viewBox="0 0 32 32">
-                  <polygon
-                    points="16,2 30,24 2,24"
+                  {/* Academic portfolio icon: stacked documents/portfolio */}
+                  <rect
+                    x="6"
+                    y="8"
+                    width="20"
+                    height="16"
                     fill="none"
                     stroke="hsl(var(--primary))"
                     strokeWidth="1.5"
+                    rx="1"
                   />
-                  <circle cx="16" cy="16" r="4" fill="hsl(var(--primary))" />
+                  <rect
+                    x="8"
+                    y="6"
+                    width="20"
+                    height="16"
+                    fill="none"
+                    stroke="hsl(var(--primary))"
+                    strokeWidth="1.5"
+                    rx="1"
+                  />
+                  <line
+                    x1="10"
+                    y1="12"
+                    x2="22"
+                    y2="12"
+                    stroke="hsl(var(--primary))"
+                    strokeWidth="1"
+                  />
+                  <line
+                    x1="10"
+                    y1="16"
+                    x2="18"
+                    y2="16"
+                    stroke="hsl(var(--primary))"
+                    strokeWidth="1"
+                  />
                 </svg>
               </div>
               <span className="font-display text-lg font-medium text-foreground">
-                Studio
+                Portfolio
               </span>
             </Link>
             <p className="font-body text-sm text-muted-foreground max-w-xs">
-              Creating digital experiences that merge artistry with engineering precision.
+              A collection of academic and creative works exploring design, technology, and innovation.
             </p>
           </motion.div>
 
@@ -100,7 +130,7 @@ export const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-body text-xs text-muted-foreground">
-            © 2024 Studio. All rights reserved.
+            © 2024 Portfolio. All rights reserved.
           </p>
           <p className="font-body text-xs text-muted-foreground">
             Designed & Built with precision

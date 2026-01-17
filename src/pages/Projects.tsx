@@ -41,6 +41,42 @@ const allProjects = [
     category: 'WebGL',
     description: 'Architectural forms rendered through code, celebrating the beauty of mathematical precision.',
   },
+  {
+    id: 'project-placeholder-1',
+    title: 'Project Placeholder 1',
+    category: 'Interactive Design',
+    description: 'A placeholder project for observing the page layout and grid structure.',
+  },
+  {
+    id: 'project-placeholder-2',
+    title: 'Project Placeholder 2',
+    category: 'Data Visualization',
+    description: 'Another placeholder project to help visualize the portfolio grid layout.',
+  },
+  {
+    id: 'project-placeholder-3',
+    title: 'Project Placeholder 3',
+    category: 'Generative Art',
+    description: 'Additional placeholder content for testing the responsive design and card spacing.',
+  },
+  {
+    id: 'project-placeholder-4',
+    title: 'Project Placeholder 4',
+    category: 'Motion Design',
+    description: 'Placeholder project demonstrating the visual hierarchy and typography of project cards.',
+  },
+  {
+    id: 'project-placeholder-5',
+    title: 'Project Placeholder 5',
+    category: 'WebGL',
+    description: 'Sample project card to observe how different category filters affect the layout.',
+  },
+  {
+    id: 'project-placeholder-6',
+    title: 'Project Placeholder 6',
+    category: 'Interactive Art',
+    description: 'Final placeholder project for comprehensive layout testing and visual assessment.',
+  },
 ];
 
 const categories = ['All', 'Interactive Design', 'Data Visualization', 'Generative Art', 'Motion Design', 'WebGL'];
