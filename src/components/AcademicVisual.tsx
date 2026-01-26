@@ -166,3 +166,4 @@ export const AcademicVisual = ({ className = '' }: AcademicVisualProps) => {
 
 export default AcademicVisual;
 
+
